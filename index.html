@@ -1,285 +1,276 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>If Statements, Switch, Loops</title>
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Fast Food Purchase</title>
+</head>
+<body>
+  
+</body>
+</html>
   <body>
-
-    <!-- <label>Enter side A</label>
-    <input type="text" id="sideA"><br><br>
-
-    <label>Enter side B</label>
-    <input type="text" id="sideB"><br><br>
-
-    <label id="sideC">Side C:</label><br><br>
-
-    <button type="button" id="button">Submit</button>
-
-    <hr> -->
-
     <h2>What Should I eat?</h2>
 
     <p>Please choose your store!</p>
 
-    <input type="radio" name="food" id="kfc">
-    <label for="kfc">KFC</label><br>
+    <input type="radio" name="food" id="kfc" />
+    <label for="kfc">KFC</label>
 
-    <input type="radio" name="food" id="burgerKing">
-    <label for="kfc">Burger King</label><br>
+    <input type="radio" name="food" id="burgerKing" />
+    <label for="kfc">Burger King</label>
 
-    <input type="radio" name="food" id="wendys">
-    <label for="kfc">Wendy's</label><br>
+    <input type="radio" name="food" id="wendys" />
+    <label for="kfc">Wendy's</label>
 
-    <input type="radio" name="food" id="mothers">
-    <label for="kfc">Mother's Patty</label><br><br>
+    <input type="radio" name="food" id="mothers" />
+    <label for="kfc">Mother's Patty</label>
 
     <button type="submit" id="storeBtn">Submit</button>
-
 
     <div class="kfc-menu">
       <h3>KFC Menu</h3>
       <ul>
         <li>
-          <input type="checkbox">
+          <input type="checkbox" />
           <label>Big Deal</label>
           <span id="priceKfcF1">$25.99</span>
           <button type="button" id="increment">+</button>
           <span id="quantityKfcF1">0</span>
           <button type="button" id="decrement">-</button>
           <span id="totalPriceKfcF1">$0.00</span>
-         </li>
-         <li>
-           <input type="checkbox">
-           <label>Meal Deal</label>
-           <span id="priceKfcF2">$14.99</span>
-           <button type="button" id="increment">+</button>
-           <span id="quantityKfcF2">0</span>
-           <button type="button" id="decrement">-</button>
-           <span id="totalPriceKfcF2">$0.00</span>
-          </li>
-          <li>
-            <input type="checkbox">
-            <label>BBQ Zinger</label>
-            <span id="priceKfcF3">$12.99</span>
-            <button type="button" id="increment">+</button>
-            <span id="quantityKfcF3">0</span>
-            <button type="button" id="decrement">-</button>
-            <span id="totalPriceKfcF3">$0.00</span>
-           </li>
-           <li>
-             <input type="checkbox">
-             <label>Spicy Zinger</label>
-             <span id="priceKfcF4">$12.99</span>
-             <button type="button" id="increment">+</button>
-             <span id="quantityKfcF4">0</span>
-             <button type="button" id="decrement">-</button>
-             <span id="totalPriceKfcF4">$0.00</span>
-            </li>
-            <li>
-              <input type="checkbox">
-              <label>Krispers Box</label>
-              <span id="priceKfcF5">$9.99</span>
-              <button type="button" id="increment">+</button>
-              <span id="quantityKfcF5">0</span>
-              <button type="button" id="decrement">-</button>
-              <span id="totalPriceKfcF5">$0.00</span>
-             </li>
-             <li>
-               <input type="checkbox">
-               <label>Big Box</label>
-               <span id="priceKfcF6">$5.99</span>
-               <button type="button" id="increment">+</button>
-               <span id="quantityKfcF6">0</span>
-               <button type="button" id="decrement">-</button>
-               <span id="totalPriceKfcF6">$0.00</span>
-              </li>
-              <li>
-                <input type="checkbox">
-                <label>Famous Bowl</label>
-                <span id="priceKfcF7">$4.99</span>
-                <button type="button" id="increment">+</button>
-                <span id="quantityKfcF7">0</span>
-                <button type="button" id="decrement">-</button>
-                <span id="totalPriceKfcF7">$0.00</span>
-               </li>
-               <li>
-                 <input type="checkbox">
-                 <label>Kids Meal</label>
-                 <span id="priceKfcF8">$3.99</span>
-                 <button type="button" id="increment">+</button>
-                 <span id="quantityKfcF8">0</span>
-                 <button type="button" id="decrement">-</button>
-                 <span id="totalPriceKfcF8">$0.00</span>
-                </li>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Meal Deal</label>
+          <span id="priceKfcF2">$14.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcF2">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcF2">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>BBQ Zinger</label>
+          <span id="priceKfcF3">$12.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcF3">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcF3">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Spicy Zinger</label>
+          <span id="priceKfcF4">$12.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcF4">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcF4">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Krispers Box</label>
+          <span id="priceKfcF5">$9.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcF5">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcF5">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Big Box</label>
+          <span id="priceKfcF6">$5.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcF6">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcF6">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Famous Bowl</label>
+          <span id="priceKfcF7">$4.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcF7">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcF7">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Kids Meal</label>
+          <span id="priceKfcF8">$3.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcF8">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcF8">$0.00</span>
+        </li>
 
-               <hr>
-               <p>Sides</p>
-               <li>
-                 <input type="checkbox">
-                 <label>Buiscuits Box</label>
-                 <span id="price">$1.99</span>
-                 <button type="button" id="increment">+</button>
-                 <span id="quantityKfcS1">0</span>
-                 <button type="button" id="decrement">-</button>
-                 <span id="totalPriceKfcS1">$0.00</span>
-                </li>
-                <li>
-                  <input type="checkbox">
-                  <label>Fries</label>
-                  <span id="price">$1.99</span>
-                  <button type="button" id="increment">+</button>
-                  <span id="quantityKfcS2">0</span>
-                  <button type="button" id="decrement">-</button>
-                  <span id="totalPriceKfcS2">$0.00</span>
-                 </li>
-                 <li>
-                   <input type="checkbox">
-                   <label>Mashed Potatoes</label>
-                   <span id="price">$2.99</span>
-                   <button type="button" id="increment">+</button>
-                   <span id="quantityKfcS3">0</span>
-                   <button type="button" id="decrement">-</button>
-                   <span id="totalPriceKfcS3">$0.00</span>
-                  </li>
-                  <hr>
-                  <p>Refreshments</p>
-                  <li>
-                    <input type="checkbox">
-                    <label>Grape Soda</label>
-                    <span id="price">$1.99</span>
-                    <button type="button" id="increment">+</button>
-                    <span id="quantityKfcR1">0</span>
-                    <button type="button" id="decrement">-</button>
-                    <span id="totalPriceKfcR1">$0.00</span>
-                   </li>
-                   <li>
-                     <input type="checkbox">
-                     <label>Wata</label>
-                     <span id="price">$0.89</span>
-                     <button type="button" id="increment">+</button>
-                     <span id="quantityKfcR2">0</span>
-                     <button type="button" id="decrement">-</button>
-                     <span id="totalPriceKfcR2">$0.00</span>
-                    </li>
-                    <li>
-                      <input type="checkbox">
-                      <label>Schwepps</label>
-                      <span id="price">$0.99</span>
-                      <button type="button" id="increment">+</button>
-                      <span id="quantityKfcR3">0</span>
-                      <button type="button" id="decrement">-</button>
-                      <span id="totalPriceKfcR3">$0.00</span>
-                     </li>
+        <hr />
+        <p>Sides</p>
+        <li>
+          <input type="checkbox" />
+          <label>Buiscuits Box</label>
+          <span id="price">$1.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcS1">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcS1">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Fries</label>
+          <span id="price">$1.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcS2">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcS2">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Mashed Potatoes</label>
+          <span id="price">$2.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcS3">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcS3">$0.00</span>
+        </li>
+        <hr />
+        <p>Refreshments</p>
+        <li>
+          <input type="checkbox" />
+          <label>Grape Soda</label>
+          <span id="price">$1.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcR1">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcR1">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Wata</label>
+          <span id="price">$0.89</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcR2">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcR2">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Schwepps</label>
+          <span id="price">$0.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcR3">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcR3">$0.00</span>
+        </li>
       </ul>
 
       <p>Your total is:</p>
       <p id="totalKFC">$0.00</p>
-
     </div>
 
     <div class="burgerKing-menu">
       <h3>Burger King Menu</h3>
       <ul>
         <li>
-          <input type="checkbox">
+          <input type="checkbox" />
           <label>Whopper</label>
           <span id="price">$25.99</span>
           <button type="button" id="increment">+</button>
           <span id="quantityKfcF1">0</span>
           <button type="button" id="decrement">-</button>
           <span id="totalPriceKfcF1">$0.00</span>
-         </li>
-         <li>
-           <input type="checkbox">
-           <label>Double Whopper</label>
-           <span id="price">$14.99</span>
-           <button type="button" id="increment">+</button>
-           <span id="quantityKfcF2">0</span>
-           <button type="button" id="decrement">-</button>
-           <span id="totalPriceKfcF2">$0.00</span>
-          </li>
-          <li>
-            <input type="checkbox">
-            <label>Junior Whopper</label>
-            <span id="price">$12.99</span>
-            <button type="button" id="increment">+</button>
-            <span id="quantityKfcF3">0</span>
-            <button type="button" id="decrement">-</button>
-            <span id="totalPriceKfcF3">$0.00</span>
-           </li>
-           <li>
-             <input type="checkbox">
-             <label>Chicken Sandwich</label>
-             <span id="price">$12.99</span>
-             <button type="button" id="increment">+</button>
-             <span id="quantityKfcF4">0</span>
-             <button type="button" id="decrement">-</button>
-             <span id="totalPriceKfcF4">$0.00</span>
-            </li>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Double Whopper</label>
+          <span id="price">$14.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcF2">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcF2">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Junior Whopper</label>
+          <span id="price">$12.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcF3">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcF3">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Chicken Sandwich</label>
+          <span id="price">$12.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcF4">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcF4">$0.00</span>
+        </li>
 
-               <hr>
-               <p>Sides</p>
-               <li>
-                 <input type="checkbox">
-                 <label>Onion Rings</label>
-                 <span id="price">$1.99</span>
-                 <button type="button" id="increment">+</button>
-                 <span id="quantityKfcS1">0</span>
-                 <button type="button" id="decrement">-</button>
-                 <span id="totalPriceKfcS1">$0.00</span>
-                </li>
-                <li>
-                  <input type="checkbox">
-                  <label>Fries</label>
-                  <span id="price">$1.99</span>
-                  <button type="button" id="increment">+</button>
-                  <span id="quantityKfcS2">0</span>
-                  <button type="button" id="decrement">-</button>
-                  <span id="totalPriceKfcS2">$0.00</span>
-                 </li>
-                 <li>
-                   <input type="checkbox">
-                   <label>Hash Browns</label>
-                   <span id="price">$2.99</span>
-                   <button type="button" id="increment">+</button>
-                   <span id="quantityKfcS3">0</span>
-                   <button type="button" id="decrement">-</button>
-                   <span id="totalPriceKfcS3">$0.00</span>
-                  </li>
-                  <hr>
-                  <p>Refreshments</p>
-                  <li>
-                    <input type="checkbox">
-                    <label>Grape Soda</label>
-                    <span id="price">$1.99</span>
-                    <button type="button" id="increment">+</button>
-                    <span id="quantityKfcR1">0</span>
-                    <button type="button" id="decrement">-</button>
-                    <span id="totalPriceKfcR1">$0.00</span>
-                   </li>
-                   <li>
-                     <input type="checkbox">
-                     <label>Wata</label>
-                     <span id="price">$0.89</span>
-                     <button type="button" id="increment">+</button>
-                     <span id="quantityKfcR2">0</span>
-                     <button type="button" id="decrement">-</button>
-                     <span id="totalPriceKfcR2">$0.00</span>
-                    </li>
-                    <li>
-                      <input type="checkbox">
-                      <label>Schwepps</label>
-                      <span id="price">$0.99</span>
-                      <button type="button" id="increment">+</button>
-                      <span id="quantityKfcR3">0</span>
-                      <button type="button" id="decrement">-</button>
-                      <span id="totalPriceKfcR3">$0.00</span>
-                     </li>
+        <hr />
+        <p>Sides</p>
+        <li>
+          <input type="checkbox" />
+          <label>Onion Rings</label>
+          <span id="price">$1.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcS1">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcS1">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Fries</label>
+          <span id="price">$1.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcS2">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcS2">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Hash Browns</label>
+          <span id="price">$2.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcS3">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcS3">$0.00</span>
+        </li>
+        <hr />
+        <p>Refreshments</p>
+        <li>
+          <input type="checkbox" />
+          <label>Grape Soda</label>
+          <span id="price">$1.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcR1">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcR1">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Wata</label>
+          <span id="price">$0.89</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcR2">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcR2">$0.00</span>
+        </li>
+        <li>
+          <input type="checkbox" />
+          <label>Schwepps</label>
+          <span id="price">$0.99</span>
+          <button type="button" id="increment">+</button>
+          <span id="quantityKfcR3">0</span>
+          <button type="button" id="decrement">-</button>
+          <span id="totalPriceKfcR3">$0.00</span>
+        </li>
       </ul>
       <p>Your total is:</p>
       <p id="totalKFC">$0.00</p>
-
     </div>
 
     <script src="java.js" charset="utf-8"></script>
