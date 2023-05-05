@@ -1,4 +1,4 @@
-/* General Styles */
+General Styles
 * {
     margin: 0;
     padding: 0;
@@ -38,8 +38,18 @@ div.stores>button {
 
 /* Menus */
 
-.kfc-menu {
+.kfc-total,
+.bk-total,
+.wendys-total,
+.mothers-total {
     margin: 10px;
+}
+
+.kfc-total,
+.bk-total,
+.wendys-total,
+.mothers-total {
+    display: flex;
 }
 
 table {
@@ -51,7 +61,7 @@ table th {
 }
 
 table th.index {
-    width: 30%;
+    width: 100px;
 }
 
 table tr td {
@@ -68,5 +78,5 @@ table tr td.row-1-label {
     border: none;
     color: #fff;
     background: rgb(142, 137, 137);
-
 }
+
