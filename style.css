@@ -1,24 +1,54 @@
-General Styles
-* {
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300&family=Work+Sans:ital,wght@0,400;0,600;0,800;1,500&display=swap');
+
+/* General Styles */
+
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
-    font-family: sans-serif;
+    font-family: "Poppins";
+    background-image: url(images/chicken-2387692_1920.jpg);
+    background-size: cover;
 }
+
+.page-one {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* display: none; */
+}
+
 
 /* stores */
 
 label img {
-    width: 50px;
-    padding: 20px 0px;
+    width: 150px;
+    padding: 20px 20px;
     transition: all .3s ease-in-out;
-
 }
 
 label img:hover {
     transform: scale(1.5);
 }
+
+.page-one h2 {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 20px 0;
+    color: white;
+}
+
+/* .stores p {
+    text-align: center;
+    padding-bottom: 10px;
+    display: none;
+} */
 
 div.stores>.shops>label {
     margin: 10px;
@@ -29,20 +59,109 @@ div.stores>.shops>input {
     display: none;
 }
 
-div.stores>button {
+div.page-one>button {
     margin-bottom: 15px;
     border: none;
-    padding: 10px 15px;
+    margin: 50px;
+    padding: 18px 50px;
+    /* width: 180px;
+    height: 50px; */
+    font-size: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background: #ffffff;
+    color: #000;
+    transition: all .3s ease-in-out;
+}
+
+div.page-one>button:hover {
+    cursor: pointer;
+    color: white;
+    background: black;
 }
 
 
 /* Menus */
 
-.kfc-total,
-.bk-total,
-.wendys-total,
-.mothers-total {
+.kfc-menu,
+.bk-menu,
+.wendys-menu,
+.mothers-menu {
     margin: 10px;
+    background-color: white;
+}
+
+/* PAGE DISPLAY START */
+
+.page-one {
+    /* display: none; */
+}
+
+.page-two,
+.page-three, 
+.page-four, 
+.page-five {
+    /* display: none; */
+}
+
+.page-six {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+
+
+/* PAGE DISPLAY END */
+
+.kfc-menu,
+.bk-menu,
+.wendys-menu,
+.mothers-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 350px;
+    border-radius: 30px;
+    padding: 20px 100px;
+    /* background: tomato; */
+    box-shadow: 1px 5px 12px rgba(0, 0, 0, 0.5);
+}
+
+.kfc-menu h3,
+.bk-menu h3,
+.wendys-menu h3,
+.mothers-menu h3 {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.kfc-menu table,
+.bk-menu table,
+.wendys-menu table,
+.mothers-menu table {
+    margin: 0;
+    padding: 0;
+}
+
+.bottom {
+    border-bottom: 2px solid rgb(40, 39, 39);
+
+}
+
+.kfc-total p,
+.bk-total p,
+.wendys-total p,
+.mothers-total p {
+    padding-top: 20px;
+    margin: auto;
 }
 
 .kfc-total,
@@ -57,7 +176,7 @@ table {
 }
 
 table th {
-    padding: 20px;
+    padding: 40px;
 }
 
 table th.index {
@@ -77,6 +196,91 @@ table tr td.row-1-label {
     height: 20px;
     border: none;
     color: #fff;
-    background: rgb(142, 137, 137);
+    background: #58729a;
 }
 
+.buy-now {
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 20px 0;
+    background: #1fe751;
+    color: #fff;
+}
+
+.buy-now:hover {
+    background: #15b83e;
+}
+
+.pay {
+    display:block;
+    width: 22%;
+    margin: 20px 0;
+}
+
+.fa-circle-check {
+    font-size: 30px;
+    margin: auto;
+    color: #07bf0b;
+    padding-left: 25px;
+}
+
+/* #thank-you-message {
+    margin-left: -35px;
+}
+
+.thanks {
+    display: flex;
+    align-items: center;
+} */
+.thank-you-page {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    /* background: lightblue; */
+}
+.thank-you-page .thanks {
+    display: flex;
+    margin: auto;
+
+}
+
+.thanks i {
+    margin: 20px;
+    font-size: 40px;
+}
+
+.thanks p {
+    font-size: 20px;
+}
+
+
+.payment h3 {
+   font-size: 30px;
+   text-align: center;
+}
+
+.payment label {
+    margin-right: 15px;
+}
+
+.payment button {
+    margin-top: 30px;
+    width: 100%;
+}
+
+
+div.thanks>p {
+    margin: auto;
+}
+
+.thank-you-page {
+    background: #fff;
+    /* display: none; */
+}
