@@ -31,3 +31,37 @@ stepOne.onclick = function(){
     }
 
 }
+
+// Menu Listing
+// KFC MENUS
+
+let kfcPrice1 = document.getElementById('priceKfcF1');
+let bigDeal = kfcPrice1.innerHTML = "12.99";
+
+
+// INC - DEC
+
+let count = 0;
+
+document.getElementById('increment').onclick = function(){
+    count += 1; 
+    document.getElementById('quantityKfcF1').innerHTML = count;
+
+};
+
+document.getElementById('decrement').onclick = function(){
+
+    count -= 1; 
+    document.getElementById('quantityKfcF1').innerHTML = count;
+
+};
+
+// Total 
+let quantity = document.getElementById('quantityKfcF1').innerHTML;
+quantity = Number(quantity);
+
+let bigDealPrice = bigDeal * quantity;
+// console.log(bigDealPrice);
+
+document.getElementById('totalPriceKfcF1').innerHTML = bigDealPrice;
+
