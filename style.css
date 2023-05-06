@@ -77,7 +77,7 @@ div.page-one>button {
 div.page-one>button:hover {
     cursor: pointer;
     color: white;
-    background: black;
+    background: #330867;
 }
 
 
@@ -101,7 +101,7 @@ div.page-one>button:hover {
 .page-three, 
 .page-four, 
 .page-five {
-    /* display: none; */
+    display: none;
 }
 
 .page-six {
@@ -112,6 +112,7 @@ div.page-one>button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: white;
     display: none;
 }
 
@@ -214,6 +215,7 @@ table tr td.row-1-label {
 
 .buy-now:hover {
     background: #15b83e;
+    cursor: pointer;
 }
 
 .pay {
@@ -282,5 +284,5 @@ div.thanks>p {
 
 .thank-you-page {
     background: #fff;
-    /* display: none; */
+    display: none;
 }
